@@ -225,11 +225,8 @@ class Dog(Animal):
         print("Dog")
 
     def toString(self):
-        return"{} is {} cm tall and {} kilograms and says {} and his owner is {}".format(self.get_name(),
-                                                                    self.get_height(),
-                                                                    self.get_weight(),
-                                                                    self.get_sound(),
-                                                                    self.__owner)
+        return f'{self.get_name()} is {self.get_height()} cm tall and {self.get_weight()} kilograms and says {self.get_sound()} and his owner is {self.__owner}';                                                         self.get_height(),
+
 
     def multiple_sounds(self, how_many=None):
         if how_many is None:
